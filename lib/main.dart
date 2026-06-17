@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'base/bottom_nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,10 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(),
-      home: const Scaffold()
+      home:BottomNavBar()
     );
   }
   }
-
 
