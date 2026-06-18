@@ -9,13 +9,31 @@ class BottomNavBar extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<BottomNavBar> {
+
+  final appScreens =[
+    Text("Home"),
+    Text("Search"),
+    Text("Tickets"),
+    Text("Profile")
+  ];
+
+    int _selectedIndex  = 0;
+  void onItemTapped(int index){
+    setState(() {
+     _selectedIndex = index; 
+    });
+   
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title:Text("My tickets"),),
-      body:Center(child:Text("Tickets Info")),
+      body: appScreens[_selectedIndex],
       bottomNavigationBar:BottomNavigationBar(
+        currentIndex: _selectedIndex,
+        onTap: onItemTapped ,
         selectedItemColor:Colors.blueGrey ,
          unselectedItemColor: const Color(0xFF526400),
         showSelectedLabels: false,
