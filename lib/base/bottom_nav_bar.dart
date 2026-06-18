@@ -1,3 +1,4 @@
+import 'package:flight_booking/screens/home_screen.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class BottomNavBar extends StatefulWidget {
 class _MyWidgetState extends State<BottomNavBar> {
 
   final appScreens =[
-    Text("Home"),
+    HomeScreen(),
     Text("Search"),
     Text("Tickets"),
     Text("Profile")
