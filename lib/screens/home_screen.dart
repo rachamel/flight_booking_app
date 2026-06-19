@@ -1,3 +1,4 @@
+import 'package:flight_booking/base/styles/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -22,29 +23,34 @@ class _HomeScreenState extends State<HomeScreen> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-               Text("Good morning"),
-               SizedBox(height: 5,),
-              Text("Book Tickets")
-          
-              ],),
+               Text("Good morning", style: AppStyles.headLineStyle3),
+                    SizedBox(height: 5,),
+              Text("Book Tickets",style:AppStyles.headLineStyle1)
+               ]),
+               
               Container(
-                width: 100,
-                height: 70,
-                color: Colors.red,
+                width: 50,
+                height: 50,
+                decoration: BoxDecoration(
+                  borderRadius:BorderRadius.circular(10), 
+                  image:DecorationImage(image: AssetImage("assets/images/plane.jpg"))
+                ),
               )
           
-            ],),
-            Row(
+              ],),
+
+              Row(
                  mainAxisAlignment:MainAxisAlignment.spaceBetween,
               children: [
               Text("Search icon"),
               Text("Empty Space")
           
-            ],) 
+            ],)
+              
+            ],),
+            ), 
           ],),
-        )
-      ],
-     )
-    );
+        );
+  
   }
 }
