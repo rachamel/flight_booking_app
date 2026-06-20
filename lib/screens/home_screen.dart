@@ -1,4 +1,6 @@
+import 'package:flight_booking/base/res/media.dart';
 import 'package:flight_booking/base/styles/app_styles.dart';
+import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -33,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 50,
                 decoration: BoxDecoration(
                   borderRadius:BorderRadius.circular(10), 
-                  image:DecorationImage(image: AssetImage("assets/images/plane.jpg"))
+                  image:DecorationImage(image:AssetImage(AppMedia.logo))
                 ),
               )
           
@@ -41,9 +43,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
               Row(
                  mainAxisAlignment:MainAxisAlignment.spaceBetween,
-              children: [
-              Text("Search icon"),
-              Text("Empty Space")
+              children: [ 
+                Icon(FluentSystemIcons.ic_fluent_search_regular, color:  Color(0xFFBFC205),),
+              Text("Search icon")
           
             ],)
               
