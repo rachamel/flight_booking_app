@@ -29,8 +29,7 @@ class _MyWidgetState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title:Text("My tickets"),),
+     
       body: appScreens[_selectedIndex],
       bottomNavigationBar:BottomNavigationBar(
         currentIndex: _selectedIndex,
