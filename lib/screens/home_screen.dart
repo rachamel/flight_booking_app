@@ -1,6 +1,7 @@
 import 'package:flight_booking/base/res/media.dart';
 import 'package:flight_booking/base/styles/app_styles.dart';
 import 'package:flight_booking/base/widgets/app_double_text.dart';
+import 'package:flight_booking/base/widgets/ticket_view.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
@@ -58,7 +59,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             ],),
               ),
           SizedBox(height: 40,),
-          AppDoubleText(bigText:"Umpcoming Flights" , smallText:"View all")
+          AppDoubleText(bigText:"Umpcoming Flights" , smallText:"View all"),
+          TicketView()
             ],),
             ), 
           
