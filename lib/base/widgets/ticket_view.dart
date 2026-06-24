@@ -1,4 +1,5 @@
 import 'package:flight_booking/base/styles/app_styles.dart';
+import 'package:flight_booking/base/widgets/big_dot.dart';
 import 'package:flutter/material.dart';
 
 class TicketView extends StatelessWidget {
@@ -15,10 +16,17 @@ class TicketView extends StatelessWidget {
     child: Container(
       padding:EdgeInsets.all(16),
       margin:EdgeInsets.only(right:16),
+      decoration: BoxDecoration(
+      color: AppStyles.ticketBlue,
+      borderRadius: BorderRadius.only(topRight:Radius.circular(21),topLeft:Radius.circular(21))
+      ),
       child:Column(children: [
         Row(
         children: [
           Text("NYC", style:AppStyles.headLineStyle3.copyWith(color:Colors.white)),
+          BigDot(),
+          Expanded(child:Container()),
+          BigDot(),
            Text("LDN", style:AppStyles.headLineStyle3.copyWith(color:Colors.white))
         ],
 
@@ -26,10 +34,6 @@ class TicketView extends StatelessWidget {
         Row(),
 
       ],),
-      decoration: BoxDecoration(
-      color: AppStyles.ticketBlue,
-      borderRadius: BorderRadius.only(topRight:Radius.circular(21),topLeft:Radius.circular(21))
-      ),
       
     ),
     );
