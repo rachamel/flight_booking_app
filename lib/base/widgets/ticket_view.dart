@@ -14,7 +14,7 @@ class TicketView extends StatelessWidget {
     width: size.width*0.85,
     height: 179,
     child: Container(
-      padding:EdgeInsets.all(16),
+      padding:EdgeInsets.all(13),
       margin:EdgeInsets.only(right:16),
       decoration: BoxDecoration(
       color: AppStyles.ticketBlue,
@@ -24,9 +24,11 @@ class TicketView extends StatelessWidget {
         Row(
         children: [
           Text("NYC", style:AppStyles.headLineStyle3.copyWith(color:Colors.white)),
+          Expanded(child: Container()),
           BigDot(),
           Expanded(child:Container()),
           BigDot(),
+          Expanded(child: Container()),
            Text("LDN", style:AppStyles.headLineStyle3.copyWith(color:Colors.white))
         ],
 
