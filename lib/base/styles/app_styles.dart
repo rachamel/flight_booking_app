@@ -8,6 +8,7 @@ static Color primaryColor = primary;
 static Color textColor = Color(0xFF3b3b3b);
 static Color bgColor = Color(0xFFFEEDF2);
 static Color ticketBlue = Color(0xFF256799);
+static Color ticketOrange = Color(0xFFF37B67);
 
 
 static TextStyle textStyle = TextStyle(

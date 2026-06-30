@@ -60,6 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
           SizedBox(height: 40,),
           AppDoubleText(bigText:"Umpcoming Flights" , smallText:"View all"),
+          SizedBox(height: 20,),
           TicketView()
             ],),
             ), 
