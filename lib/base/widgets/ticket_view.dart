@@ -3,6 +3,8 @@ import 'package:flight_booking/base/widgets/app_layoutbuilder.dart';
 import 'package:flight_booking/base/widgets/big_dot.dart';
 import 'package:flutter/material.dart';
 
+import 'big_circle.dart';
+
 class TicketView extends StatelessWidget {
   const TicketView({super.key});
 
@@ -13,7 +15,7 @@ class TicketView extends StatelessWidget {
     return SizedBox(
 
     width: size.width*0.85,
-    height: 179,
+    height: 189,
     child: Container(
       margin:EdgeInsets.only(right:16),
       child: Column(
@@ -60,7 +62,19 @@ class TicketView extends StatelessWidget {
         ],),
             
           ),
-           Container(
+          Container(
+            height:20,
+              width: size.width*0.85,
+            color:AppStyles.ticketOrange,
+            child:Row(
+              children: [
+                BigCircle(),
+                Expanded(child: Container()),
+                BigCircle()
+              ],
+            )
+          ),
+          Container(
             padding:EdgeInsets.all(13),
             margin:EdgeInsets.only(right:16),
             decoration: BoxDecoration(
